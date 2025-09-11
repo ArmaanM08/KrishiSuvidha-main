@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Indian Agricultural Design System - Earthy, Farmer-Friendly Theme */
+
+@layer base {
+  :root {
+    /* Agricultural color palette */
+    --background: 48 20% 98%;
+    --foreground: 25 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 15% 15%;
+
+    /* Crop green primary */
+    --primary: 95 55% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 95 45% 35%;
+
+    /* Soil brown secondary */
+    --secondary: 32 45% 88%;
+    --secondary-foreground: 25 15% 15%;
+
+    /* Muted earth tones */
+    --muted: 48 15% 92%;
+    --muted-foreground: 25 10% 45%;
+
+    /* Sky blue accent */
+    --accent: 195 80% 92%;
+    --accent-foreground: 195 100% 15%;
+
+    /* Weather alert orange */
+    --warning: 38 92% 65%;
+    --warning-foreground: 0 0% 98%;
+
+    /* Success green for healthy crops */
+    --success: 140 70% 45%;
+    --success-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 48 15% 88%;
+    --input: 48 15% 95%;
+    --ring: 95 55% 25%;
+
+    --radius: 0.75rem;
+
+    /* Agricultural gradients */
+    --gradient-crop: linear-gradient(135deg, hsl(95 55% 25%), hsl(95 45% 35%));
+    --gradient-soil: linear-gradient(135deg, hsl(32 45% 75%), hsl(32 35% 65%));
+    --gradient-sky: linear-gradient(135deg, hsl(195 80% 85%), hsl(205 70% 75%));
+    --gradient-sunset: linear-gradient(135deg, hsl(38 92% 65%), hsl(32 80% 55%));
+    
+    /* Shadows for depth */
+    --shadow-soft: 0 2px 8px hsl(25 15% 15% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(25 15% 15% / 0.12);
+    --shadow-strong: 0 8px 32px hsl(25 15% 15% / 0.16);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar colors for agricultural theme */
+    --sidebar-background: 48 20% 96%;
+    --sidebar-foreground: 25 15% 25%;
+    --sidebar-primary: 95 55% 25%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 95 30% 90%;
+    --sidebar-accent-foreground: 95 55% 25%;
+    --sidebar-border: 48 15% 88%;
+    --sidebar-ring: 95 55% 25%;
+  }
+
+  .dark {
+    /* Dark mode for agricultural theme */
+    --background: 25 15% 8%;
+    --foreground: 48 20% 92%;
+
+    --card: 25 15% 10%;
+    --card-foreground: 48 20% 92%;
+
+    --popover: 25 15% 10%;
+    --popover-foreground: 48 20% 92%;
+
+    --primary: 95 45% 45%;
+    --primary-foreground: 25 15% 8%;
+    --primary-glow: 95 55% 55%;
+
+    --secondary: 32 25% 15%;
+    --secondary-foreground: 48 20% 92%;
+
+    --muted: 25 10% 15%;
+    --muted-foreground: 48 10% 65%;
+
+    --accent: 195 60% 20%;
+    --accent-foreground: 195 80% 85%;
+
+    --warning: 38 85% 55%;
+    --warning-foreground: 25 15% 8%;
+
+    --success: 140 60% 40%;
+    --success-foreground: 25 15% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 25 15% 8%;
+
+    --border: 25 10% 18%;
+    --input: 25 10% 18%;
+    --ring: 95 45% 45%;
+
+    --sidebar-background: 25 15% 6%;
+    --sidebar-foreground: 48 20% 92%;
+    --sidebar-primary: 95 45% 45%;
+    --sidebar-primary-foreground: 25 15% 8%;
+    --sidebar-accent: 25 10% 15%;
+    --sidebar-accent-foreground: 95 45% 45%;
+    --sidebar-border: 25 10% 18%;
+    --sidebar-ring: 95 45% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Custom utility classes for agricultural theme */
+  .gradient-crop {
+    background: var(--gradient-crop);
+  }
+  
+  .gradient-soil {
+    background: var(--gradient-soil);
+  }
+  
+  .gradient-sky {
+    background: var(--gradient-sky);
+  }
+  
+  .gradient-sunset {
+    background: var(--gradient-sunset);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
